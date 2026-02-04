@@ -1,5 +1,4 @@
-/* ============================ */
-/* General */
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -11,8 +10,8 @@ body{
     color:#1E1E1E;
 }
 
-/* ============================ */
-/* Navbar */
+
+
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -44,8 +43,7 @@ body{
     color:#D2B5A6;
 }
 
-/* ============================ */
-/* Cover Section */
+
 .cover{
     height:580px;
     background:url("im/head.jpg") center/cover no-repeat;
@@ -76,8 +74,7 @@ body{
     50%{transform:translateY(-20px)}
 }
 
-/* ============================ */
-/* Section Title */
+
 .blog-card h2,
 .blog-card{
     text-align:center;
@@ -86,8 +83,7 @@ body{
     margin:30px 0;
 }
 
-/* ============================ */
-/* Top Categories */
+
 .categories{
     display:flex;
     flex-wrap:wrap;
@@ -125,14 +121,13 @@ body{
     opacity:1;
 }
 
-/* ============================ */
-/* Milkshake & Blog Slider Section */
+
 .slider-section {
     position: relative;
     margin-bottom:60px;
 }
 
-/* Scrollable Containers */
+
 .milkshakes-container,
 .blogs-container {
     display:flex;
@@ -147,7 +142,7 @@ body{
     cursor:grabbing;
 }
 
-/* Slider Buttons */
+
 .scroll-btn {
     position:absolute;
     top:50%;
@@ -169,7 +164,7 @@ body{
     color:#000;
 }
 
-/* Milkshake Cards */
+
 .milkshake-card{
     min-width:280px;
     background:#D2B5A6;
@@ -188,9 +183,9 @@ body{
     border-radius:10px;
 }
 
-/* Blogs Cards */
+
 .blogs-section {
-  position: relative; /* Buttons absolute floating এর জন্য */
+  position: relative; 
 }
 
 .blogs-section .scroll-btn.left,
@@ -286,10 +281,10 @@ body{
     .blog-card .read-more:disabled:focus:hover{
         box-shadow:none;
     }
-/* ============================ */
 
 
-/* Footer */
+
+
 footer{
     background:#1E1E1E;
     color:#fff;
@@ -310,15 +305,13 @@ footer{
     text-decoration:underline;
 }
 
-/* ============================ */
-/* Scrollbar Hide */
+
 .milkshakes-container::-webkit-scrollbar,
 .blogs-container::-webkit-scrollbar{
     display:none;
 }
 
-/* ============================ */
-/* Responsive */
+
 @media(max-width:768px){
     .cover-text h1{
         font-size:48px;
@@ -334,3 +327,4 @@ footer{
         min-width:240px;
     }
 }
+
