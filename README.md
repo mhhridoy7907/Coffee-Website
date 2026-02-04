@@ -1,8 +1,8 @@
 # Coffee Web ☕  
 A modern and stylish coffee shop website built using **HTML, CSS, and JavaScript** with smooth animations, sliders, and a clean UI design.
 
-![Website Preview](preview.png)
-![Animation Preview](animution.png)
+![Website Preview](coff.png)
+
 
 ---
 
