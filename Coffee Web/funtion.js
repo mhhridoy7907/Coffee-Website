@@ -1,4 +1,4 @@
-// ===== Drag Scroll =====
+
 function enableDragScroll(containerClass) {
     const slider = document.querySelector(containerClass);
     if (!slider) return;
@@ -30,7 +30,7 @@ function enableDragScroll(containerClass) {
     });
 }
 
-// ===== Button Scroll =====
+
 document.querySelectorAll('.scroll-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const target = document.querySelector(btn.dataset.target);
@@ -41,7 +41,7 @@ document.querySelectorAll('.scroll-btn').forEach(btn => {
     });
 });
 
-// ===== Activate Drag Scroll =====
+
 enableDragScroll('.milkshakes-container');
 enableDragScroll('.blogs-container');
 enableDragScroll('.products-container');
@@ -62,4 +62,5 @@ enableDragScroll('.partners-container');
 enableDragScroll('.sponsors-container');
 
 
-// Add more containers as needed//
+
+
