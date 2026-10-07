@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/5d/0c/8a/5d0c8abff6dc2a35eb448737eca4df4c.jpg">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/5d/0c/8a/5d0c8abff6dc2a35eb448737eca4df4c.jpg" alt="Logo">
+    </div>
+
+    <ul>
+        <li data-section="home">Home</li>
+        <li data-section="shakes">Menu</li>
+        <li data-section="blogs">Blog</li>
+        <li data-section="carousel-section">Media</li>
+        <li data-section="footer">Contact</li>
+        <li data-section="search-section">Search</li>
+    </ul>
+</nav>
+
+<section class="cover" id="home">
+    <div class="cover-text">
+        <h1>
+            <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+            <span>&nbsp;</span>
+            <span>T</span><span>o</span>
+            <span>&nbsp;</span>
+            <span>C</span><span>o</span><span>f</span><span>f</span><span>e</span><span>e</span>
+            <span>&nbsp;</span>
+            <span>H</span><span>u</span><span>n</span><span>t</span>
+        </h1>
+    </div>
+</section>
+
+<section class="carousel-section" id="carousel-section">
+    <div class="section-title">
+        <h2>TOP CATEGORIES</h2>
+    </div>
+
+    <div class="hero">
+        <div class="scene">
+            <div class="carousel" id="carousel"></div>
+        </div>
+    </div>
+</section>
+
+<section class="slider-section" id="shakes">
+    <div class="section-title">
+        <h2>Shakes</h2>
+    </div>
+
+    <button class="scroll-btn left" data-target=".milkshakes-container" data-dir="left">◀</button>
+    <button class="scroll-btn right" data-target=".milkshakes-container" data-dir="right">▶</button>
+
+    <div class="milkshakes-container" id="milkshakes-container"></div>
+</section>
+
+<section class="blogs-section" id="blogs">
+    <div class="section-title">
+        <h2>Blogs</h2>
+    </div>
+
+    <button class="scroll-btn left" data-target=".blogs-container" data-dir="left">◀</button>
+    <button class="scroll-btn right" data-target=".blogs-container" data-dir="right">▶</button>
+
+    <div class="blogs-container" id="blogs-container"></div>
+</section>
+
+<section class="order-section" id="orders">
+    <div class="section-title">
+        <h2>Place Your Order</h2>
+    </div>
+
+    <div class="order-container" id="order-container"></div>
+</section>
+
+<section class="search-section" id="search-section">
+    <input type="text" id="search-input" placeholder="Search coffee, milkshakes, desserts...">
+</section>
+
+<div id="not-found">
+    No items found.
+</div>
+
+<div class="copyright-section">
+    <img id="copyright-img" src="https://i.pinimg.com/736x/ce/58/c1/ce58c1d1278349c500426a7ef0f6908f.jpg" alt="Logo">
+    <p>© 2026 MH Hridoy. All rights reserved.</p>
+</div>
+
+<div id="img-modal" class="img-modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Preview">
+</div>
+
+<footer id="footer">
+    <div class="footer-section">
+        <div>
+            <h3>Product Categories</h3>
+            <p>Coffee, Milkshakes, Desserts</p>
+        </div>
+
+        <div>
+            <h3>Company Info</h3>
+            <p>About Us, Contact, Careers</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js.js"></script>
+
+</body>
+</html>
