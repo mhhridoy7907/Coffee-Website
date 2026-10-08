@@ -4,3 +4,211 @@
  Firebase & Admin Panel will be added in a future update.
 
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Web Admin</title>
+    <link rel="stylesheet" herf="admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Coffee Web Admin Panel</h1>
+        <p>Manage website content</p>
+    </header>
+
+    <main>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+
+            <div>
+                <h3>Carousel Items</h3>
+                <p id="carousel-count">0</p>
+            </div>
+
+            <div>
+                <h3>Shakes</h3>
+                <p id="shake-count">0</p>
+            </div>
+
+            <div>
+                <h3>Blogs</h3>
+                <p id="blog-count">0</p>
+            </div>
+
+            <div>
+                <h3>Orders</h3>
+                <p id="order-count">0</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="carousel-manager">
+            <h2>Manage Top Categories</h2>
+
+            <form id="carousel-form">
+                <input type="hidden" id="carousel-id">
+
+                <label>Image URL</label>
+                <input type="url" id="carousel-image" placeholder="Image URL" required>
+
+                <br><br>
+
+                <label>Title</label>
+                <input type="text" id="carousel-title" placeholder="Category title">
+
+                <br><br>
+
+                <button type="submit">Upload / Save</button>
+                <button type="button" id="carousel-cancel">Cancel</button>
+            </form>
+
+            <div id="carousel-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="shake-manager">
+            <h2>Manage Shakes</h2>
+
+            <form id="shake-form">
+                <input type="hidden" id="shake-id">
+
+                <label>Shake Name</label>
+                <input type="text" id="shake-name" placeholder="Shake name" required>
+
+                <br><br>
+
+                <label>Price</label>
+                <input type="number" id="shake-price" placeholder="Price" step="0.01" required>
+
+                <br><br>
+
+                <label>Image URL</label>
+                <input type="url" id="shake-image" placeholder="Image URL" required>
+
+                <br><br>
+
+                <label>Description</label>
+                <textarea id="shake-description" placeholder="Description"></textarea>
+
+                <br><br>
+
+                <button type="submit">Upload / Save</button>
+                <button type="button" id="shake-cancel">Cancel</button>
+            </form>
+
+            <div id="shake-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="blog-manager">
+            <h2>Manage Blogs</h2>
+
+            <form id="blog-form">
+                <input type="hidden" id="blog-id">
+
+                <label>Blog Title</label>
+                <input type="text" id="blog-title" placeholder="Blog title" required>
+
+                <br><br>
+
+                <label>Image URL</label>
+                <input type="url" id="blog-image" placeholder="Image URL" required>
+
+                <br><br>
+
+                <label>Blog Content</label>
+                <textarea id="blog-content" placeholder="Blog content"></textarea>
+
+                <br><br>
+
+                <button type="submit">Upload / Save</button>
+                <button type="button" id="blog-cancel">Cancel</button>
+            </form>
+
+            <div id="blog-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="order-manager">
+            <h2>Manage Order Items</h2>
+
+            <form id="order-form">
+                <input type="hidden" id="order-id">
+
+                <label>Product Name</label>
+                <input type="text" id="order-name" placeholder="Product name" required>
+
+                <br><br>
+
+                <label>Price</label>
+                <input type="number" id="order-price" placeholder="Price" step="0.01" required>
+
+                <br><br>
+
+                <label>Image URL</label>
+                <input type="url" id="order-image" placeholder="Image URL" required>
+
+                <br><br>
+
+                <label>Description</label>
+                <textarea id="order-description" placeholder="Description"></textarea>
+
+                <br><br>
+
+                <button type="submit">Upload / Save</button>
+                <button type="button" id="order-cancel">Cancel</button>
+            </form>
+
+            <div id="order-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="site-settings">
+            <h2>Website Settings</h2>
+
+            <form id="settings-form">
+
+                <label>Website Title</label>
+                <input type="text" id="site-title" placeholder="Coffee Web">
+
+                <br><br>
+
+                <label>Logo URL</label>
+                <input type="url" id="site-logo" placeholder="Logo URL">
+
+                <br><br>
+
+                <label>Cover Image URL</label>
+                <input type="url" id="cover-image" placeholder="Cover image URL">
+
+                <br><br>
+
+                <label>Cover Text</label>
+                <input type="text" id="cover-text" placeholder="Welcome To Coffee Hunt">
+
+                <br><br>
+
+                <button type="submit">Save Settings</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MH Hridoy. Coffee Web Admin Panel.</p>
+    </footer>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+</html>
